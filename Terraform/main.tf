@@ -40,7 +40,7 @@ resource "aws_security_group" "ec2_security_group" {
   }
 }
 
-resource "aws_instance" "monitoring_server" {
+resource "aws_instance" "Monitoring_server" {
 ami = "ami-0f9de6e2d2f067fca"  
 instance_type = "t2.medium"
 security_groups = [aws_security_group.ec2_security_group.name]
